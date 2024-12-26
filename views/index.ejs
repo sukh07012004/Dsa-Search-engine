@@ -219,7 +219,7 @@
         try {
           //   console.log("HELLO");
           const res = await fetch(
-            `https://code-search-engine-2.onrender.com/search?query=${query}`,
+            `https://dsa-search-engine-5ttp.onrender.com/search?query=${query}`,
             { method: "GET" }
           );
           const data = await res.json();
@@ -236,7 +236,7 @@
                 .querySelector("a")
                 .setAttribute(
                   "href",
-                  `https://code-search-engine-2.onrender.com/question/${data[i].id}`
+                  `https://dsa-search-engine-5ttp.onrender.com/question/${data[i].id}`
                 );
               questionText[i].querySelector("p").innerHTML = data[i].problem;
             }
